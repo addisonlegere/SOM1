@@ -104,11 +104,7 @@
 			</div>
 			<div id="postbox-container-1" class="postbox-container">
 				<div id="postimagediv" class="postbox">
-<<<<<<< HEAD
 					<h2 class="hndle"><?php _e('Filter','academy'); ?></h2>
-=======
-					<h3 class="normal"><?php _e('Filter','academy'); ?></h3>
->>>>>>> master
 					<div class="inside noborder">
 						<form action="<?php echo themex_url(); ?>" method="GET">
 							<p>
@@ -137,11 +133,7 @@
 					</div>
 				</div>
 				<div id="postimagediv" class="postbox">
-<<<<<<< HEAD
 					<h2 class="hndle"><?php _e('Courses','academy'); ?></h2>
-=======
-					<h3 class="normal"><?php _e('Courses','academy'); ?></h3>
->>>>>>> master
 					<div class="inside noborder">
 						<div class="misc-pub-section">
 							<strong class="alignleft"><?php _e('Total', 'academy'); ?></strong>
@@ -161,11 +153,7 @@
 					</div>
 				</div>
 				<div id="postimagediv" class="postbox">
-<<<<<<< HEAD
 					<h2 class="hndle"><?php _e('Students','academy'); ?></h2>
-=======
-					<h3 class="normal"><?php _e('Students','academy'); ?></h3>
->>>>>>> master
 					<div class="inside noborder">
 						<div class="misc-pub-section">
 							<strong class="alignleft"><?php _e('Total', 'academy'); ?></strong>
@@ -185,11 +173,7 @@
 					</div>
 				</div>
 				<div id="postimagediv" class="postbox">
-<<<<<<< HEAD
 					<h2 class="hndle"><?php _e('Options','academy'); ?></h2>
-=======
-					<h3 class="normal"><?php _e('Options','academy'); ?></h3>
->>>>>>> master
 					<div class="inside noborder">
 						<div class="misc-pub-section">
 							<form action="<?php echo themex_url(); ?>" method="GET" target="_blank">

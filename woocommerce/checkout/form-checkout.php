@@ -26,13 +26,7 @@ $query=new WP_Query(array(
 		<?php
 		$query->the_post();		
 		if($related->post_type=='course') {
-<<<<<<< HEAD
 			get_template_part('content', 'course-grid');
-=======
-			// START EDIT TO USE MULTI FILE AT CHECKOUT -AKL 10.18.2016
-			get_template_part('content', 'course-grid-multi');
-			// END EDIT TO USE MULTI FILE AT CHECKOUT -AKL 10.18.2016
->>>>>>> master
 		} else {
 			get_template_part('content', 'plan');
 		}

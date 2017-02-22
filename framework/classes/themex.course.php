@@ -441,11 +441,7 @@ class ThemexCourse {
 	public static function redirectCourse() {
 		$ID=ThemexCore::getRewriteRule('redirect');
 		
-<<<<<<< HEAD
 		if(!empty($ID) && is_numeric($ID)) {
-=======
-		if(!empty($ID)) {
->>>>>>> master
 			$post=get_post($ID);
 			
 			if(!empty($post)) {
@@ -491,11 +487,7 @@ class ThemexCourse {
 				if($plan['product']!=0) {
 					foreach($subscriptions as $key=>$subscription) {
 						if(function_exists('wcs_get_users_subscriptions')) {
-<<<<<<< HEAD
 							$product=reset($subscription->get_items());
-=======
-							$product=reset($subscription->order->get_items());
->>>>>>> master
 							
 							if(is_array($product) && isset($product['product_id']) && $product['product_id']==$plan['product']) {
 								$time=strtotime($subscription->end_date);
@@ -944,11 +936,7 @@ class ThemexCourse {
 							'link' => $redirect,
 						);
 						
-<<<<<<< HEAD
 						themex_mail($data->user_email, __('Course Membership', 'academy'), themex_keywords($message, $keywords));
-=======
-						themex_mail($data->user_email, __('Welcome to Your New Class', 'academy'), themex_keywords($message, $keywords));
->>>>>>> master
 					}
 					
 					if(!$private) {

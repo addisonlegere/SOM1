@@ -1,9 +1,5 @@
 <?php get_header(); ?>
-<<<<<<< HEAD
 <div class="course-content clearfix popup-container">
-=======
-<div class="course-content clearfix popup-container" id="course-content">
->>>>>>> master
 	<?php if(!empty(ThemexCourse::$data['questions'])) { ?>
 	<div class="sevencol column">
 	<?php } else { ?>
@@ -12,17 +8,9 @@
 		<?php if(!empty(ThemexCourse::$data['lessons'])) { ?>
 		<h1><?php _e('Lessons', 'academy'); ?></h1>
 		<?php if(ThemexCourse::isMember()) { ?>
-<<<<<<< HEAD
 		<div class="course-progress">
 			<span style="width:<?php echo ThemexCourse::$data['progress']; ?>%;"></span>
 		</div>
-=======
-		<?php // START title to progress bar -AL ?>
-		<div class="course-progress" title="Course Progress <?php echo ThemexCourse::$data['progress']; ?>%">
-			<span style="width:<?php echo ThemexCourse::$data['progress']; ?>%;"></span>
-		</div>
-		<?php // END title to progress bar -AL ?>
->>>>>>> master
 		<?php } ?>
 		<div class="lessons-listing">
 			<?php foreach(ThemexCourse::$data['lessons'] as $index=>$lesson) { ?>
