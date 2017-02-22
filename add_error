@@ -1,0 +1,47 @@
+define('AJAX_URL', admin_url('admin-ajax.php'));
+// ONE --------------
+// TWO ---------- (Backend WordPress widget area)
+		<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'course_widget'); ?></label>
+		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+		<label for="<?php echo $this->get_field_id('numberOfCourses'); ?>"><?php _e('Number of Courses:', 'course_widget'); ?></label>
+		<select id="<?php echo $this->get_field_id('numberOfCourses'); ?>"  name="<?php echo $this->get_field_name('numberOfCourses'); ?>">
+// THREE ----------- (runs how many courses you selected)
+	$this->getCourseCourses($numberOfCourses);
+// FOUR --------------- (Front End Output)
+	$courses->query('post_type=course&orderby=rand&posts_per_page=' . $numberOfCourses );
+	if($courses->found_posts > 0) {
+			while ($courses->have_posts()) {
+				$courses->the_post();
+				$image = (has_post_thumbnail($post->ID)) ? get_the_post_thumbnail($post->ID) : '<div class="noThumb"></div>';
+				$listItem .= '<div class="course-info"><div class="course-inner"><a href="' . get_permalink() . '">';
+	$user_nicename = $user_info -> user_nicename;
+		$wp_post_types['wpdmpro']->exclude_from_search = true;
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+ // Store for checking if this page equals wp-login.php
+ $login_page  = "http://bennyhinnbiblestudy.org/my-account/";
+ 	if( $page_viewed == 'wp-login.php' && $_SERVER['REQUEST_METHOD'] == 'GET') {
+	 }elseif( $page_viewed == 'wp-admin' && $_SERVER['REQUEST_METHOD'] == 'GET') {
+		 }elseif( $page_viewed == 'wp-login.php?wpe-login=bhmsom' && $_SERVER['REQUEST_METHOD'] == 'GET') {
+		 }elseif( $page_viewed == 'wp-login.php?checkemail=confirm' && $_SERVER['REQUEST_METHOD'] == 'GET') {
+		 }elseif( $page_viewed == 'wp-login.php?redirect_to=http%3A%2F%2Fbennyhinnbiblestudy.org%2Fwp-admin%2F&reauth=1' && $_SERVER['REQUEST_METHOD'] == 'GET') {
+	 *	see line 330 of wp-login.php for parameters
+	//printf( '<p>%s</p>', __( 'Hi, ' ) . get_user_meta( $user_data->ID, 'first_name', true ) );
+	<table align="center" width="586" style="border: 1px solid #dcdcdc;border-radius: 5px;border-collapse:collapse;">
+					<a href="https://bennyhinnbiblestudy.org/donate-now/" style="display: block;line-height: 90%;text-align: center;height: 109px;"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/benny_hinn_bible_study_email_header.jpg"></a>
+				<td style="background-color:#455564;padding:10px 20px;">
+					<h2 style="color:#ffffff;font-weight: 400;margin:0;">Reset Password</h2>
+					<p>Hello ' . get_user_meta( $user_data->ID, 'first_name', true ) . ',</p>
+					<a href="https://give.church/dw7i42j" style="display: block;line-height: 90%;text-align: center;height: 145px;"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/benny_hinn_bible_study_email_footer.jpg" alt="Benny Hinn Bible Study Footer" style="border:0; outline:none; text-decoration:none;"></a>
+				<td style="padding-left:10px;padding-right:10px;background-color:#455564;font-size: 13px;border-radius: 0px 0px 4px 4px;">
+					<table style="border-collapse:collapse;">
+						<td><p style="color:#ffffff;display:inline-block;font-size: 13px;">© 2016 Bookmark Publishing, Dallas, TX. All Rights Reserved.</p></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://plus.google.com/+bennyhinnministries"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/googleplus.png" alt="Google Plus" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://www.instagram.com/pastorbennyhinn/"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/instagram.png" alt="Instagram" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://www.youtube.com/channel/UCjnhyffXt8kQfsr8dNHrihA"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/youtube.png" alt="Youtube" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://www.pinterest.com/bennyhinnorg/"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/pinterest.png" alt="Pinterest" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://twitter.com/benny_hinn"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/twitter.png" alt="Twitter" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://www.facebook.com/BennyHinnMinistries/"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/facebook.png" alt="Facebook" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+						<td style="padding-top: 10px;padding-right:5px;display:inline-block;float:right;"><a href="https://www.periscope.tv/Benny_Hinn"><img src="https://bennyhinnbiblestudy.org/wp-content/uploads/2016/04/periscope.png" alt="Periscope" style="height: 20px;width: 20px;border-radius: 3px;display:inline-block;border:0; outline:none; text-decoration:none;"></a></td>
+$subRole = get_role( 'subscriber' );  $subRole->add_cap( 'read_private_posts' ); $subRole->add_cap( 'read_private_pages' );
+$subRole = get_role( 'customer' );  $subRole->add_cap( 'read_private_posts' ); $subRole->add_cap( 'read_private_pages' );
+$subRole = get_role( 'author' );  $subRole->add_cap( 'read_private_posts' ); $subRole->add_cap( 'read_private_pages' );

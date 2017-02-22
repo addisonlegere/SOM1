@@ -1,0 +1,59 @@
+html, body {
+	background: #455564;
+	height: auto;
+}
+.login #nav a, .login #backtoblog a {
+	color: #ffffff;
+}
+.login #backtoblog a:hover, .login #backtoblog a:active, .login #backtoblog a:focus {
+	color: #dddddd;
+	outline: none;
+	box-shadow: none;
+}
+.button, .wp-core-ui .button-primary, .wp-core-ui .button-primary:hover {
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.15)), color-stop(100%,rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 100%);
+    background-image: -o-linear-gradient(top, rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient(top, rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 100%);
+    background-color: #93262a;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+/*.wp-core-ui .button-primary:after {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	background: url(images/bgs/button_bg.png) 0 0 repeat-x;
+	content: " ";
+}*/
+.wp-core-ui .button-primary:hover {
+    background-color: #97363a;
+}
+.login h1 a {
+	background-size: 320px;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+#nav {
+	display: none;
+}
+#loginform input[type="text"], #loginform input[type="password"] {
+	-webkit-box-shadow: 0 2px 5px rgba(204,204,204,0.4) inset;
+	-moz-box-shadow: 0 2px 5px rgba(204,204,204,0.4) inset;
+	box-shadow: 0 2px 5px rgba(204,204,204,0.4) inset;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #D4D4D4;
+}
