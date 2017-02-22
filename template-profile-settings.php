@@ -55,4 +55,10 @@ Template Name: Profile Settings
 	</div>
 	<?php get_sidebar('profile-right'); ?>
 </div>
+<<<<<<< HEAD
+=======
+<?php // BELOW IS ON FILES template-profile-settings.php, template-profile-links.php, author.php, woocommerce/myaccount/my-account.php, and woocommerce/myaccount/view-order.php ?>
+<hr>
+<div class="checkout-cert"><a href="/all-courses/" class="element-button secondary">Enroll in an Additional Course! | Click Here</a><a href="/donate-now/" class="element-button">Donate Now</a></div>
+>>>>>>> master
 <?php get_footer(); ?>

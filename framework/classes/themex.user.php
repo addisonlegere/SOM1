@@ -342,6 +342,17 @@ class ThemexUser {
      */
 	public static function loginUser($data) {
 		$data['remember']=true;		
+<<<<<<< HEAD
+=======
+
+if(isset($data['user_login']) && is_email($data['user_login'])) {
+	$userdata=get_user_by('email', $data['user_login']);
+	if($userdata!==false) {
+		$data['user_login']=$userdata->user_login;
+	}
+}
+		
+>>>>>>> master
 		$user=wp_signon($data, false);
 		
 		if(is_wp_error($user) || empty($data['user_login']) || empty($data['user_password'])){
@@ -413,13 +424,21 @@ class ThemexUser {
 				);
 				
 				if(themex_mail($email, __('Password Recovery', 'academy'), themex_keywords($message, $keywords))) {
+<<<<<<< HEAD
 					ThemexInterface::$messages[]=__('Password reset link is sent', 'academy');
+=======
+					ThemexInterface::$messages[]=__('<span class="success">A password link was emailed.</span>', 'academy');
+>>>>>>> master
 				} else {
 					ThemexInterface::$messages[]=__('Error sending email', 'academy');
 				}
 			}			
 		} else {
+<<<<<<< HEAD
 			ThemexInterface::$messages[]=__('Incorrect email address', 'academy');		
+=======
+			ThemexInterface::$messages[]=__('Invalid email address', 'academy');		
+>>>>>>> master
 		}
 		
 		ThemexInterface::renderMessages();		

@@ -17,8 +17,12 @@ if($layout=='left') {
 <?php } else { ?>
 <div class="fullwidth-section">
 <?php } ?>
+<<<<<<< HEAD
 	<?php echo themex_format(category_description()); ?>
 	<div class="clear"></div>
+=======
+	<?php echo category_description(); ?>
+>>>>>>> master
 	<div class="posts-listing">
 		<?php
 		if(is_page()) {

@@ -10,6 +10,7 @@ function themex_html($string) {
 }
 
 /**
+<<<<<<< HEAD
  * Formats HTML content
  *
  * @param string $string
@@ -24,6 +25,8 @@ function themex_format($string) {
 }
 
 /**
+=======
+>>>>>>> master
  * Removes slashes
  *
  * @param string $string

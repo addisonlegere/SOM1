@@ -40,6 +40,7 @@ var themeElements = {
 jQuery(document).ready(function($) {
 	
 	//Dropdown Menu
+<<<<<<< HEAD
 	$(themeElements.mainMenu).find('li').hoverIntent(
 		function() {
 			var menuItem=$(this);
@@ -55,6 +56,23 @@ jQuery(document).ready(function($) {
 			});
 		}
 	);
+=======
+	// $(themeElements.mainMenu).find('li').hoverIntent(
+	// 	function() {
+	// 		var menuItem=$(this);
+	// 		menuItem.parent('ul').css('overflow','visible');			
+	// 		menuItem.children('ul').slideToggle(200, function() {
+	// 			menuItem.addClass('hover');
+	// 		});
+	// 	},
+	// 	function() {
+	// 		var menuItem=$(this);
+	// 		menuItem.children('ul').slideToggle(200, function() {
+	// 			menuItem.removeClass('hover');
+	// 		});
+	// 	}
+	// );
+>>>>>>> master
 	
 	//Select Menu
 	$(themeElements.select).each(function() {
@@ -409,7 +427,11 @@ jQuery(document).ready(function($) {
 	
 	//Facebook Button
 	$(themeElements.facebookButton).click(function() {
+<<<<<<< HEAD
 		var redirect=$(this).data('redirect');
+=======
+		var redirect=$(this).attr('href');
+>>>>>>> master
 		
 		if(typeof(FB)!='undefined') {
 			FB.login(function(response) {

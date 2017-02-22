@@ -20,8 +20,12 @@ if($layout=='left') {
 <?php } else { ?>
 <div class="fullwidth-section">
 <?php } ?>
+<<<<<<< HEAD
 	<?php echo themex_format(category_description()); ?>
 	<div class="clear"></div>
+=======
+	<?php echo category_description(); ?>
+>>>>>>> master
 	<?php ThemexCourse::queryCourses(); ?>
 	<?php if($view=='list') { ?>
 	<div class="posts-listing clearfix">
@@ -53,7 +57,14 @@ if($layout=='left') {
 		$counter++;
 		?>
 		<div class="column <?php echo $width; ?>col <?php echo $counter==$columns ? 'last':''; ?>">
+<<<<<<< HEAD
 		<?php get_template_part('content', 'course-grid'); ?>
+=======
+			<?php get_template_part('content', 'course-grid'); ?>
+			<div class="take-course">
+				<?php get_template_part('module', 'form2'); ?>
+			</div>
+>>>>>>> master
 		</div>
 		<?php
 		if($counter==$columns) {

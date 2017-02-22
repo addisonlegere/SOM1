@@ -306,6 +306,7 @@ class ThemexLesson {
 				}
 
 				$percentage=round(($result/count(self::$data['quiz']['questions']))*100);
+<<<<<<< HEAD
 				if(self::$data['quiz']['percentage']==0) {
 					$percentage=100;
 				}
@@ -316,11 +317,22 @@ class ThemexLesson {
 					} else {
 						ThemexInterface::$messages[]=sprintf(__('Congratulations! You have passed this quiz achieving %d%%!', 'academy'), $percentage);
 					}			
+=======
+				if(self::$data['quiz']['percentage']>0 && $percentage>=self::$data['quiz']['percentage']) {
+					ThemexInterface::$messages[]=sprintf(__('Congratulations! You passed this quiz with a score of %d%%. Click the “next” button to proceed to the next lesson.', 'academy'), $percentage);
+>>>>>>> master
 					
 					self::completeLesson($percentage, true);
 					ThemexCore::addUserRelation(get_current_user_id(), self::$data['quiz']['ID'], 'answers', $answers);
 				} else {
+<<<<<<< HEAD
 					ThemexInterface::$messages[]=sprintf(__('You are required %d%% to pass this quiz.', 'academy'), self::$data['quiz']['percentage']);
+=======
+					//ThemexInterface::$messages[]=sprintf(__('You are required %d%% to pass this quiz.', 'academy'), self::$data['quiz']['percentage']);
+					//self::$data['quiz']['percentage']<=50 && $percentage>=self::$data['quiz']['percentage']) {
+					ThemexInterface::$messages[]=sprintf(__('Your quiz score is %d%%.', 'academy'), $percentage);
+					ThemexInterface::$messages[]=sprintf(__('A score of %d%% is required to proceed to the next lesson. Please adjust and resubmit your answers. ', 'academy'), self::$data['quiz']['percentage']);
+>>>>>>> master
 				}
 			}
 		} else {
@@ -402,7 +414,11 @@ class ThemexLesson {
 				if($question['type']=='multiple') {
 					foreach($question['answers'] as $key => $answer) {
 						$answer['ID']=$key;
+<<<<<<< HEAD
 						$title=themex_format($answer['title']);
+=======
+						$title=do_shortcode($answer['title']);
+>>>>>>> master
 						
 						$checked='';
 						if(isset($_POST[$ID]) && isset($_POST[$ID][$key])) {
@@ -420,7 +436,11 @@ class ThemexLesson {
 				} else {
 					foreach($question['answers'] as $key => $answer) {
 						$answer['ID']=$key;
+<<<<<<< HEAD
 						$title=themex_format($answer['title']);
+=======
+						$title=do_shortcode($answer['title']);
+>>>>>>> master
 						
 						$checked='';
 						if(isset($_POST[$ID]) && $_POST[$ID]==$key) {
@@ -506,7 +526,11 @@ class ThemexLesson {
 			}
 			
 			$message=ThemexCore::getOption('email_question');
+<<<<<<< HEAD
 			if(!empty($comment['comment_parent']) && !empty($message)) {
+=======
+			if($comment['comment_parent']!==0 && !empty($message)) {
+>>>>>>> master
 				$question=get_comment($comment['comment_parent'], ARRAY_A);
 				$replies=get_comments(array(
 					'parent' => $comment['comment_parent'],					
@@ -529,7 +553,11 @@ class ThemexLesson {
 								'link' => get_comment_link($comment['comment_parent']),
 							);
 							
+<<<<<<< HEAD
 							themex_mail($email, __('Question Answered', 'academy'), themex_keywords($message, $keywords));
+=======
+							themex_mail($emails, __('Question Answered', 'academy'), themex_keywords($message, $keywords));
+>>>>>>> master
 						}
 					}					
 				}
