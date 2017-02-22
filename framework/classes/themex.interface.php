@@ -176,7 +176,9 @@ class ThemexInterface {
 					$path=CHILD_PATH;
 				}
 				
-				$template=$path.'template-'.$key.'.php';
+				if(file_exists($path.'template-'.$key.'.php')) {
+					$template=$path.'template-'.$key.'.php';
+				}
 			}
 		}
 		

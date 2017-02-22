@@ -28,7 +28,7 @@ if(is_user_logged_in()){
 	<?php do_action('woocommerce_login_form'); ?>		
 	<?php wp_nonce_field('woocommerce-login'); ?>
 	<a href="#" class="element-button submit-button primary"><span class="button-icon login"></span><?php _e('Sign In', 'woocommerce'); ?></a>
-	<input type="hidden" name="redirect" value="<?php echo esc_url($redirect)?>" />
+	<input type="hidden" name="redirect" value="<?php echo esc_url($redirect); ?>" />
 	<input name="rememberme" type="hidden" id="rememberme" value="forever" />
 	<input type="hidden" name="login" value="1" />	
 	<?php do_action('woocommerce_login_form_end'); ?>

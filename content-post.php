@@ -1,31 +1,14 @@
 <article <?php post_class('post clearfix'); ?>>
-	<!-- CHECKS IF IS SEARCH PAGE TO KEEP THUMBNAIL SIZE SMALLER 2.9.16 AL -->
-		<?php if( is_search() ) { ?>
-			<?php if(has_post_thumbnail()) { ?>
-				
-			<div class="column fourcol post-image">
-				<div class="bordered-image thick-border">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('normal'); ?></a>
-				</div>
-			</div>
-			<div class="post-content column eightcol last">
-			<?php } else { ?>
-			<div class="post-content">
-			<?php } ?>
-		<?php } else { ?>
-			<?php if(has_post_thumbnail()) { ?>
-				
-			<div class="column fivecol post-image">
-				<div class="bordered-image thick-border">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('normal'); ?></a>
-				</div>
-			</div>
-			<div class="post-content column sevencol last">
-			<?php } else { ?>
-			<div class="post-content">
-			<?php } ?>
-		<?php } ?>
-		<!-- END SEARCH PAGE CHECK -->
+	<?php if(has_post_thumbnail()) { ?>
+	<div class="column fivecol post-image">
+		<div class="bordered-image thick-border">
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('normal'); ?></a>
+		</div>
+	</div>
+	<div class="post-content column sevencol last">
+	<?php } else { ?>
+	<div class="post-content">
+	<?php } ?>
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<?php 
 		if(isset($GLOBALS['content'])) {

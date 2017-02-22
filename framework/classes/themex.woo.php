@@ -49,6 +49,7 @@ class ThemexWoo {
 			//remove actions
 			remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
 			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+			remove_action('template_redirect', 'wc_disable_author_archives_for_customers');
 			
 			//add actions
 			add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 10);
@@ -163,7 +164,7 @@ class ThemexWoo {
 		if(self::isActive()) {
 			self::$woocommerce->cart->empty_cart();
 			self::$woocommerce->cart->add_to_cart($ID, 1);
-			wp_redirect(self::$woocommerce->cart->get_cart_url());
+			wp_redirect(self::$woocommerce->cart->get_checkout_url());
 			exit();
 		}
 	}
@@ -290,19 +291,28 @@ class ThemexWoo {
      * @return array
      */
 	public static function filterFields($fields) {
-		self::$data['billing_first_name']=true;
-		self::$data['billing_last_name']=true;
-		self::$data['billing_email']=true;
-		self::$data['shipping_first_name']=true;
-		self::$data['shipping_last_name']=true;
-		self::$data['order_comments']=true;
-		self::$data['account_username']=true;
-		self::$data['account_password']=true;
+		$optional=array(
+			'billing_company',
+			'billing_phone',
+			'billing_country',
+			'billing_address_1',
+			'billing_address_2',
+			'billing_city',
+			'billing_state',
+			'billing_postcode',
+			'shipping_company',
+			'shipping_country',
+			'shipping_address_1',
+			'shipping_address_2',
+			'shipping_city',
+			'shipping_state',
+			'shipping_postcode',
+		);
 		
 		foreach($fields as $form_key => $form) {
 			foreach($form as $field_key => $field) {
 				$short_key=str_replace(array('shipping_', 'billing_', '_1', '_2'), '', $field_key);				
-				if(isset(self::$data[$field_key]) || isset(self::$data['billing_'.$short_key]) || isset(self::$data['shipping_'.$short_key])) {
+				if(!in_array($field_key, $optional) || isset(self::$data[$field_key]) || isset(self::$data['billing_'.$short_key]) || isset(self::$data['shipping_'.$short_key])) {
 					if(isset($fields[$form_key][$field_key]['label'])) {
 						$fields[$form_key][$field_key]['placeholder']=$fields[$form_key][$field_key]['label'];
 					}

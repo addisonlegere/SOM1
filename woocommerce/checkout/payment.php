@@ -31,9 +31,11 @@ if(!defined('ABSPATH')) {
 			<div class="toggle-container <?php if ($gateway->chosen) echo 'expanded'; ?>">
 				<label for="payment_method_<?php echo $gateway->id; ?>" class="toggle-title"><h5 class="nomargin"><?php echo $gateway->get_title(); ?></h5></label>
 				<input type="radio" id="payment_method_<?php echo $gateway->id; ?>" class="hidden" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php if ($gateway->chosen) echo 'checked="checked"'; ?> />							
-				<?php if ( $gateway->has_fields() || $gateway->get_description() ) : ?>
+				<?php if ( $gateway->has_fields() || $gateway->get_description() ) { ?>
 				<div class="toggle-content payment_method_<?php echo $gateway->id; ?>"><?php $gateway->payment_fields(); ?></div>
-				<?php endif; ?>			
+				<?php } else { ?>	
+				<div class="toggle-content hidden"></div>
+				<?php } ?>
 			</div>
 			<?php
 			}
@@ -64,8 +66,6 @@ if(!defined('ABSPATH')) {
 			</p>
 		<?php } ?>
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
-		<?php // EDIT CART BUTTON -AKL 10-20-2016 ?>
-		<a href="/cart/" style="float:right;padding-top: 6px;margin-right: 15px;">edit cart</a>
 	</div>
 	<div class="clear"></div>
 </div>

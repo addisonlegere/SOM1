@@ -14,7 +14,7 @@
 		</div>
 		<div class="widget-content">
 			<?php the_content(); ?>
-			<footer class="course-footer<?php if ( WC()->cart->get_cart_contents_count() != 0 ) { ?> multi-checkout<?php } ?>">
+			<footer class="course-footer">
 				<?php get_template_part('module', 'form'); ?>
 			</footer>
 		</div>						

@@ -61,9 +61,9 @@ Template Name: Registration
 		</div>			
 		<a href="#" class="element-button submit-button left"><span class="button-icon login"></span><?php _e('Sign In','academy'); ?></a>
 		<?php if(ThemexFacebook::isActive()) { ?>
-		<a href="<?php echo ThemexFacebook::getURL(); ?>" title="<?php _e('Sign in with Facebook','academy'); ?>" class="element-button facebook-button left">
+		<span class="element-button facebook-button left" title="<?php _e('Sign in with Facebook','academy'); ?>" data-redirect="<?php echo ThemexFacebook::getURL(); ?>">
 			<span class="button-icon facebook"></span>
-		</a>
+		</span>
 		<?php } ?>
 		<div class="form-loader"></div>
 		<input type="hidden" name="user_action" value="login_user" />

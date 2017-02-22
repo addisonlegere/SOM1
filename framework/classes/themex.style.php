@@ -213,5 +213,4 @@ class ThemexStyle {
 		
 		echo $out;
 	}
-	
 }

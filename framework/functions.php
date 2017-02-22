@@ -10,6 +10,20 @@ function themex_html($string) {
 }
 
 /**
+ * Formats HTML content
+ *
+ * @param string $string
+ * @return string
+ */
+function themex_format($string) {
+	remove_filter('the_content', 'wpautop');
+	$string=apply_filters('the_content', $string);
+	add_filter('the_content', 'wpautop');
+	
+	return $string;
+}
+
+/**
  * Removes slashes
  *
  * @param string $string

@@ -159,8 +159,5 @@ $order=wc_get_order($order_id);
 		<?php } ?>
 	</tbody>
 </table>
-<p>
-	<a href="/all-courses/" class="element-button">Enroll in an Additional Course Now! | Click Here</a>
-</p>
 <?php do_action('woocommerce_order_details_after_order_table', $order); ?>
 <?php remove_filter('the_title', 'wc_page_endpoint_title'); ?>

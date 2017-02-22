@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Academy\n"
-"POT-Creation-Date: 2015-12-25 00:58+0100\n"
-"PO-Revision-Date: 2015-12-25 00:58+0100\n"
+"POT-Creation-Date: 2016-07-23 23:32+0200\n"
+"PO-Revision-Date: 2016-07-23 23:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: Themex\n"
 "Language: en_US\n"
@@ -20,7 +20,7 @@ msgid "Comments"
 msgstr ""
 
 #: ../content-lesson.php:8 ../framework/classes/themex.course.php:85
-#: ../framework/classes/themex.woo.php:138 ../framework/config.php:559
+#: ../framework/classes/themex.woo.php:139 ../framework/config.php:559
 #: ../framework/config.php:701
 msgid "Free"
 msgstr ""
@@ -96,15 +96,15 @@ msgid "Average Grade"
 msgstr ""
 
 #: ../framework/classes/themex.course.php:1271
-#: ../framework/classes/themex.lesson.php:634
-#: ../framework/classes/themex.lesson.php:635 ../framework/config.php:275
+#: ../framework/classes/themex.lesson.php:642
+#: ../framework/classes/themex.lesson.php:643 ../framework/config.php:275
 #: ../framework/config.php:344 ../framework/config.php:706
 #: ../template-statistics.php:21 ../template-statistics.php:70
 msgid "Course"
 msgstr ""
 
 #: ../framework/classes/themex.course.php:1274
-#: ../framework/classes/themex.interface.php:900 ../framework/config.php:284
+#: ../framework/classes/themex.interface.php:902 ../framework/config.php:284
 #: ../framework/config.php:369 ../framework/config.php:760
 #: ../template-statistics.php:23 ../template-statistics.php:72
 msgid "Lesson"
@@ -141,26 +141,26 @@ msgid "Code"
 msgstr ""
 
 #: ../framework/classes/themex.form.php:273
-#: ../framework/classes/themex.interface.php:402
-#: ../framework/classes/themex.interface.php:615
-#: ../framework/classes/themex.interface.php:650
-#: ../framework/classes/themex.interface.php:701
+#: ../framework/classes/themex.interface.php:404
+#: ../framework/classes/themex.interface.php:617
+#: ../framework/classes/themex.interface.php:652
+#: ../framework/classes/themex.interface.php:703
 #: ../framework/classes/themex.shortcode.php:146
 #: ../framework/classes/themex.sidebar.php:182
 msgid "Remove"
 msgstr ""
 
 #: ../framework/classes/themex.form.php:280
-#: ../framework/classes/themex.interface.php:403
-#: ../framework/classes/themex.interface.php:616
-#: ../framework/classes/themex.interface.php:651
-#: ../framework/classes/themex.interface.php:690
+#: ../framework/classes/themex.interface.php:405
+#: ../framework/classes/themex.interface.php:618
+#: ../framework/classes/themex.interface.php:653
+#: ../framework/classes/themex.interface.php:692
 #: ../framework/classes/themex.shortcode.php:147
 msgid "Add"
 msgstr ""
 
 #: ../framework/classes/themex.form.php:286
-#: ../framework/classes/themex.interface.php:811
+#: ../framework/classes/themex.interface.php:813
 #: ../framework/classes/themex.sidebar.php:88
 #: ../framework/classes/widgets/themex.authors.php:97
 #: ../framework/config.php:1298
@@ -187,7 +187,7 @@ msgid "Number"
 msgstr ""
 
 #: ../framework/classes/themex.form.php:309
-#: ../framework/classes/themex.interface.php:812 ../header.php:78
+#: ../framework/classes/themex.interface.php:814 ../header.php:78
 #: ../template-register.php:19 ../woocommerce/myaccount/form-login.php:22
 msgid "Email"
 msgstr ""
@@ -229,11 +229,11 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:383
+#: ../framework/classes/themex.interface.php:385
 msgid "Browse"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:411
+#: ../framework/classes/themex.interface.php:413
 #: ../framework/classes/widgets/themex.authors.php:80
 #: ../framework/classes/widgets/themex.comments.php:65
 #: ../framework/classes/widgets/themex.twitter.php:72
@@ -242,105 +242,109 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:421
+#: ../framework/classes/themex.interface.php:423
 msgid "Document"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:422
+#: ../framework/classes/themex.interface.php:424
 msgid "Audio"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:423 ../framework/config.php:804
+#: ../framework/classes/themex.interface.php:425 ../framework/config.php:804
 msgid "Video"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:433
+#: ../framework/classes/themex.interface.php:435
 msgid "File"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:434 ../framework/config.php:797
+#: ../framework/classes/themex.interface.php:436 ../framework/config.php:797
 #: ../framework/config.php:846 ../framework/config.php:1046
 msgid "Link"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:539
-#: ../framework/classes/themex.interface.php:574 ../framework/config.php:669
+#: ../framework/classes/themex.interface.php:541
+#: ../framework/classes/themex.interface.php:576 ../framework/config.php:669
 msgid "None"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:624
-#: ../framework/classes/themex.interface.php:801 ../template-statistics.php:11
+#: ../framework/classes/themex.interface.php:626
+#: ../framework/classes/themex.interface.php:803 ../template-statistics.php:11
 #: ../template-statistics.php:44
 msgid "Question"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:634
+#: ../framework/classes/themex.interface.php:636
 msgid "Single Choice"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:635
+#: ../framework/classes/themex.interface.php:637
 msgid "Multiple Choice"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:636
+#: ../framework/classes/themex.interface.php:638
 msgid "Short Answer"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:659
-#: ../framework/classes/themex.lesson.php:388 ../template-statistics.php:12
+#: ../framework/classes/themex.interface.php:661
+#: ../framework/classes/themex.lesson.php:396 ../template-statistics.php:12
 #: ../template-statistics.php:45
 msgid "Answer"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:802
-#: ../framework/classes/themex.interface.php:814
+#: ../framework/classes/themex.interface.php:804
+#: ../framework/classes/themex.interface.php:816
 msgid "Comment"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:806
+#: ../framework/classes/themex.interface.php:808
 msgid "Add Question"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:815
+#: ../framework/classes/themex.interface.php:817
 msgid "Add Comment"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:903 ../framework/config.php:394
+#: ../framework/classes/themex.interface.php:905 ../framework/config.php:394
 msgid "Quiz"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:919 ../header.php:35
+#: ../framework/classes/themex.interface.php:921 ../header.php:35
 #: ../sidebar-profile-left.php:20
 msgid "My Profile"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:921
+#: ../framework/classes/themex.interface.php:923
 msgid "Profile"
 msgstr ""
 
-#: ../framework/classes/themex.interface.php:926
+#: ../framework/classes/themex.interface.php:928
 msgid "Archives"
 msgstr ""
 
-#: ../framework/classes/themex.lesson.php:310
+#: ../framework/classes/themex.lesson.php:315
+msgid "Congratulations! You have passed this quiz."
+msgstr ""
+
+#: ../framework/classes/themex.lesson.php:317
 #, php-format
 msgid "Congratulations! You have passed this quiz achieving %d%%!"
 msgstr ""
 
-#: ../framework/classes/themex.lesson.php:315
+#: ../framework/classes/themex.lesson.php:323
 #, php-format
 msgid "You are required %d%% to pass this quiz."
 msgstr ""
 
-#: ../framework/classes/themex.lesson.php:497
+#: ../framework/classes/themex.lesson.php:505
 msgid "ERROR"
 msgstr ""
 
-#: ../framework/classes/themex.lesson.php:497
+#: ../framework/classes/themex.lesson.php:505
 msgid "please type a question."
 msgstr ""
 
-#: ../framework/classes/themex.lesson.php:524
+#: ../framework/classes/themex.lesson.php:532
 msgid "Question Answered"
 msgstr ""
 
@@ -383,7 +387,6 @@ msgid "Please fill in all fields"
 msgstr ""
 
 #: ../framework/classes/themex.user.php:220
-#: ../framework/classes/themex.user.php:422
 msgid "Invalid email address"
 msgstr ""
 
@@ -455,6 +458,10 @@ msgstr ""
 msgid "Error sending email"
 msgstr ""
 
+#: ../framework/classes/themex.user.php:422
+msgid "Incorrect email address"
+msgstr ""
+
 #: ../framework/classes/themex.user.php:575
 msgid "Profile has been successfully saved"
 msgstr ""
@@ -515,31 +522,31 @@ msgstr ""
 msgid "Vimeo"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:78
+#: ../framework/classes/themex.woo.php:79
 msgid "Show Country"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:85
+#: ../framework/classes/themex.woo.php:86
 msgid "Show City"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:92
+#: ../framework/classes/themex.woo.php:93
 msgid "Show State"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:99
+#: ../framework/classes/themex.woo.php:100
 msgid "Show Address"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:106
+#: ../framework/classes/themex.woo.php:107
 msgid "Show Postcode"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:113
+#: ../framework/classes/themex.woo.php:114
 msgid "Show Company"
 msgstr ""
 
-#: ../framework/classes/themex.woo.php:120
+#: ../framework/classes/themex.woo.php:121
 msgid "Show Phone"
 msgstr ""
 
@@ -1710,31 +1717,31 @@ msgstr ""
 msgid "Sidebars"
 msgstr ""
 
-#: ../framework/functions.php:603
+#: ../framework/functions.php:617
 msgid "week"
 msgstr ""
 
-#: ../framework/functions.php:607
+#: ../framework/functions.php:621
 msgid "month"
 msgstr ""
 
-#: ../framework/functions.php:611
+#: ../framework/functions.php:625
 msgid "year"
 msgstr ""
 
-#: ../framework/functions.php:615
+#: ../framework/functions.php:629
 msgid "months"
 msgstr ""
 
-#: ../framework/functions.php:621
+#: ../framework/functions.php:635
 msgid "day"
 msgstr ""
 
-#: ../framework/functions.php:623
+#: ../framework/functions.php:637
 msgid "days"
 msgstr ""
 
-#: ../framework/functions.php:626
+#: ../framework/functions.php:640
 msgid "less than a day"
 msgstr ""
 
@@ -1900,11 +1907,11 @@ msgstr ""
 msgid "Certificate not found"
 msgstr ""
 
-#: ../template-posts.php:37
+#: ../template-posts.php:38
 msgid "No posts found. Try a different search?"
 msgstr ""
 
-#: ../template-posts.php:38
+#: ../template-posts.php:39
 msgid ""
 "Sorry, no posts matched your search. Try again with some different keywords."
 msgstr ""
@@ -2103,7 +2110,7 @@ msgid "I accept the"
 msgstr ""
 
 #: ../woocommerce/checkout/form-checkout.php:47
-#: ../woocommerce/checkout/payment.php:63
+#: ../woocommerce/checkout/payment.php:65
 msgid "terms &amp; conditions"
 msgstr ""
 
@@ -2111,18 +2118,18 @@ msgstr ""
 msgid "Payment Method"
 msgstr ""
 
-#: ../woocommerce/checkout/payment.php:42
+#: ../woocommerce/checkout/payment.php:44
 msgid "Please fill in your details above to see available payment methods."
 msgstr ""
 
-#: ../woocommerce/checkout/payment.php:44
+#: ../woocommerce/checkout/payment.php:46
 msgid ""
 "Sorry, it seems that there are no available payment methods for your state. "
 "Please contact us if you require assistance or wish to make alternate "
 "arrangements."
 msgstr ""
 
-#: ../woocommerce/checkout/payment.php:51
+#: ../woocommerce/checkout/payment.php:53
 msgid ""
 "Since your browser does not support JavaScript, or it is disabled, please "
 "ensure you click the <em>Update Totals</em> button before placing your "
@@ -2130,15 +2137,15 @@ msgid ""
 "do so."
 msgstr ""
 
-#: ../woocommerce/checkout/payment.php:51
+#: ../woocommerce/checkout/payment.php:53
 msgid "Update totals"
 msgstr ""
 
-#: ../woocommerce/checkout/payment.php:55
+#: ../woocommerce/checkout/payment.php:57
 msgid "Place order"
 msgstr ""
 
-#: ../woocommerce/checkout/payment.php:63
+#: ../woocommerce/checkout/payment.php:65
 msgid "I have read and accept the"
 msgstr ""
 
